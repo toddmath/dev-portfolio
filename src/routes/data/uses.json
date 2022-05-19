@@ -1,0 +1,39 @@
+{
+	"hardware": {
+		"computer": {
+			"name": "Macbook Pro",
+			"year": "2018",
+			"description": "I code on a Macbook Pro powered by a 14nm, 2.2Ghz 'Intel Core i7' with 6 cores. Also, it has 16GB of RAM and a 512GB SSD.",
+			"link": "https://support.apple.com/kb/SP776?locale=en_US"
+		},
+		"phone": {
+			"name": "iPhone 11",
+			"year": "2019",
+			"description": "For my phone, I have an iPhone 11 with 128GB of capacity. Although it's not the newest model, nor the pro, I've been very happy with it so far.",
+			"link": "https://www.apple.com/iphone-11/specs/"
+		},
+		"monitor": {
+			"name": "Samsung",
+			"year": "2021",
+			"description": "For an external monitor, I use a 28\" Samsung UR50. It's a decent monitor with 4k resolution and decent brightness.",
+			"link": "https://www.samsung.com/us/computing/monitors/uhd-and-wqhd/28-ur50-uhd-monitor-lu28r550uqnxza"
+		}
+	},
+	"software": {
+		"terminal": {
+			"name": "kitty",
+			"description": "I use kitty as main terminal emulator. Honestly, I like it a lot. It has a lot of features and customizable options. Also, it is very fast and it uses the GPU for rendering. If you are uses iTerm or worse, terminal.app, you should definately check out kitty.",
+			"link": "https://sw.kovidgoyal.net/kitty/"
+		},
+		"text editor": {
+			"name": "Neovim",
+			"description": "I mostly use Neovim as my text editor. I like having Lua built in for scripting and configuration. Also, it is very fast and although I am a vim newbie, I code faster then when I was using VSCode.",
+			"link": "https://neovim.io/"
+		},
+		"font": {
+			"name": "Operator Mono",
+			"description": "For my font, I use a custom version of Operator Mono, with ligatures. The ligatures are similar to the ones in Fira Code. It has a nice italic support, aswell, for things such as comments. It's a very nice font, and personally, I can't imagine coding with anything else.",
+			"link": "https://github.com/kiliman/operator-mono-lig"
+		}
+	}
+}

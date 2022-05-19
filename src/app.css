@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+	/* --step--2: clamp(0.78rem, calc(0.71rem + 0.35vw), 0.96rem); */
+	/* --step--1: clamp(0.94rem, calc(0.84rem + 0.51vw), 1.20rem); */
+	/* --step-0: clamp(1.13rem, calc(0.98rem + 0.73vw), 1.50rem); */
+	/* --step-1: clamp(1.35rem, calc(1.15rem + 1.02vw), 1.88rem); */
+	/* --step-2: clamp(1.62rem, calc(1.34rem + 1.41vw), 2.34rem); */
+	/* --step-3: clamp(1.94rem, calc(1.56rem + 1.92vw), 2.93rem); */
+	/* --step-4: clamp(2.33rem, calc(1.81rem + 2.59vw), 3.66rem); */
+	/* --step-5: clamp(2.80rem, calc(2.11rem + 3.47vw), 4.58rem); */
+	--step--2: clamp(0.79rem, calc(0.79rem + 0.02vw), 0.8rem);
+	--step--1: clamp(0.89rem, calc(0.85rem + 0.22vw), 1rem);
+	--step-0: clamp(1rem, calc(0.9rem + 0.49vw), 1.25rem);
+	--step-1: clamp(1.13rem, calc(0.95rem + 0.85vw), 1.56rem);
+	--step-2: clamp(1.27rem, calc(1rem + 1.34vw), 1.95rem);
+	--step-3: clamp(1.42rem, calc(1.03rem + 1.99vw), 2.44rem);
+	--step-4: clamp(1.6rem, calc(1.04rem + 2.83vw), 3.05rem);
+	--step-5: clamp(1.8rem, calc(1.02rem + 3.93vw), 3.82rem);
+
+	/* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|m-xl */
+	--space-3xs: clamp(0.31rem, calc(0.29rem + 0.12vw), 0.38rem);
+	--space-2xs: clamp(0.56rem, calc(0.49rem + 0.37vw), 0.75rem);
+	--space-xs: clamp(0.88rem, calc(0.78rem + 0.49vw), 1.13rem);
+	--space-s: clamp(1.13rem, calc(0.98rem + 0.73vw), 1.5rem);
+	--space-m: clamp(1.69rem, calc(1.47rem + 1.1vw), 2.25rem);
+	--space-l: clamp(2.25rem, calc(1.96rem + 1.46vw), 3rem);
+	--space-xl: clamp(3.38rem, calc(2.94rem + 2.2vw), 4.5rem);
+	--space-2xl: clamp(4.5rem, calc(3.91rem + 2.93vw), 6rem);
+	--space-3xl: clamp(6.75rem, calc(5.87rem + 4.39vw), 9rem);
+
+	/* One-up pairs */
+	--space-3xs-2xs: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem);
+	--space-2xs-xs: clamp(0.56rem, calc(0.34rem + 1.1vw), 1.13rem);
+	--space-xs-s: clamp(0.88rem, calc(0.63rem + 1.22vw), 1.5rem);
+	--space-s-m: clamp(1.13rem, calc(0.69rem + 2.2vw), 2.25rem);
+	--space-m-l: clamp(1.69rem, calc(1.18rem + 2.56vw), 3rem);
+	--space-l-xl: clamp(2.25rem, calc(1.37rem + 4.39vw), 4.5rem);
+	--space-xl-2xl: clamp(3.38rem, calc(2.35rem + 5.12vw), 6rem);
+	--space-2xl-3xl: clamp(4.5rem, calc(2.74rem + 8.78vw), 9rem);
+
+	/* Custom pairs */
+	--space-s-l: clamp(1.13rem, calc(0.39rem + 3.66vw), 3rem);
+	--space-m-xl: clamp(1.69rem, calc(0.59rem + 5.49vw), 4.5rem);
+}
+
+.mx-fluid-xs {
+	margin-inline: var(--space-xs);
+}
+.mx-fluid-sm {
+	margin-inline: var(--space-s);
+}
+.mx-fluid-md {
+	margin-inline: var(--space-m);
+}
+.mx-fluid-lg {
+	margin-inline: var(--space-l);
+}
+.mx-fluid-xl {
+	margin-inline: var(--space-xl);
+}
+.mx-fluid-2xl {
+	margin-inline: var(--space-2xl);
+}
+.mx-fluid-3xl {
+	margin-inline: var(--space-3xl);
+}
+
+p {
+	font-size: var(--step-0);
+	color: var(--text-primary-content);
+	line-height: 1.5;
+}
+
+.s-ripple-container {
+	position: relative;
+	overflow: hidden;
+}
+
+/* @layer base { */
+/* 	h1 { */
+/* 		@apply text-4xl md:text-5xl font-bold; */
+/* 	} */
+/**/
+/* 	h2 { */
+/* 		@apply text-3xl md:text-4xl font-semibold; */
+/* 	} */
+/**/
+/* 	h3 { */
+/* 		@apply text-2xl md:text-3xl font-semibold; */
+/* 	} */
+/**/
+/* 	a { */
+/* 		@apply transition duration-200 rounded font-semibold underline decoration-solid decoration-2 underline-offset-1 md:underline-offset-2 decoration-green-500 text-neutral-900 hover:text-neutral-800 hover:decoration-green-400 dark:text-gray-100 dark:hover:text-gray-200 dark:decoration-gray-400 dark:hover:decoration-gray-100 ring-offset-4 ring-green-600/80 ring-offset-green-100 focus:ring-4; */
+/* 	} */
+/**/
+/* 	img { */
+/* 		@apply transition rounded-lg shadow dark:grayscale-10; */
+/* 	} */
+/* } */
