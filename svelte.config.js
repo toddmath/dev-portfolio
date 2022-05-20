@@ -33,6 +33,10 @@ const config = {
 					$components: path.resolve('src/components')
 				}
 			}
+		},
+
+		paths: {
+			assets: path.resolve('src/assets')
 		}
 	}
 };
